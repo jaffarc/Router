@@ -17,7 +17,7 @@
         },
         options = {
             debug: true,
-            VERSION  : '1.0.0'
+            VERSION  : '0.0.3'
         };
         /**
         * Propriedade Publica
@@ -178,7 +178,6 @@
          * 
          */
         Public.extend = Private.extend;
-
     
 
         return Public;

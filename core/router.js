@@ -126,7 +126,6 @@
 
         return Public;
         
-
     })(APP.Router, window);
     APP.Router = Router;
 
