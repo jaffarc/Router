@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Router-exemple</title>
+</head>
+<body>
+
+<script type="text/javascript" src="/js/router-min-un.js"></script>
+
+<script type="text/javascript">
+
+	Router.config({ mode: 'history'});
+
+	Router.navigate();	
+
+	Router.add(/category/, function() {
+	    console.log('category');
+	});
+
+	Router.add(/test/, function() {
+	    console.log('about');
+	})
+
+	Router.add(/products\/(.*)\/edit\/(.*)/, function() {
+	    console.log(arguments);
+	});
+
+	Router.add(function() {
+	    console.log('default');
+	})
+
+	Router.check('/products/55/edit/2080').listen();
+
+
+	Router.navigate('/test');
+
+</script>
+</body>
+</html>
