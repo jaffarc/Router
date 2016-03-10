@@ -35,14 +35,6 @@ describe('Router', function() {
 		});
 	});
 
-	describe('listen', function() {
-	
-		it('return a object with interval', function() {
-
-			expect(Router.listen()).toEqual(jasmine.objectContaining({interval: jasmine.any(Number)}));
-		});
-
-	});
 
 	describe('check', function() {
 		var arg;

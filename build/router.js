@@ -18,19 +18,7 @@ Router = (function (mod, window) {
             routes: [],
             root: '/',
             name: "Router",
-            version: "1.0.1",
-            listen  : function() {
-                var current = Private.getFragment(), fn;
-                fn = function() {
-                    if(current !== Private.getFragment()) {
-                        current = Private.getFragment();
-                        Public.check(current);
-                    }
-                }
-                clearInterval(this.interval);
-                this.interval = setInterval(fn, 50);
-                return this;
-            }
+            version: "1.0.1"
         };
 
     Private.extend = function(defaults, options) {
@@ -62,7 +50,7 @@ Router = (function (mod, window) {
      * @return {[type]}        [description]
      */
     Public.config = function(option) {
-        options.mode = option && option.mode && option.mode == 'history' && !!(history.pushState) ? 'history' : 'hash';
+        options.mode = option && option.mode == 'history' && !!(history.pushState) ? 'history' : 'hash';
         options.root = option && option.root ? '/' + Private.clearSlashes(option.root) + '/' : '/';
 
         return options;
