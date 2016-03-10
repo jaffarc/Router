@@ -22,7 +22,7 @@
 	    console.log('about');
 	})
 
-	Router.add(/products\/(.*)\/edit\/(.*)/, function() {
+	Router.add(/category\/(\d+)\/edit\/(\d+)/, function() {
 	    console.log(arguments);
 	});
 
@@ -30,7 +30,7 @@
 	    console.log('default');
 	})
 
-	Router.check('/products/55/edit/2080').listen();
+	Router.check('/category/55/edit/2080').listen();
 
 
 	Router.navigate('/test');
