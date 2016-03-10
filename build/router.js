@@ -1,13 +1,13 @@
 /*!
- * Router JavaScript v1.0.0
+ * Router JavaScript v1.0.1
  *
  *
- * Date: Fri 13/13/2015
+ * Date: Fri 09/03/2016
  */
 /**
  * @namespace Router
  * @class
- * @version 1.0.0
+ * @version 1.0.1
  */
 var window = {};
 var Router = window.Router === window.Router || {};
@@ -18,7 +18,7 @@ Router = (function (mod, window) {
             routes: [],
             root: '/',
             name: "Router",
-            version: "1.0.0",
+            version: "1.0.1",
             listen  : function() {
                 var current = Private.getFragment(), fn;
                 fn = function() {
@@ -121,7 +121,6 @@ Router = (function (mod, window) {
                 return options;
             }           
         }
-        //return options;
     };
     /**
      * [navigate description]

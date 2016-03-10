@@ -1,7 +1,7 @@
 {
-  "name": "Router",
+  "name": "router",
   "version": "1.0.0",
-  "description": "router as ",
+  "description": "router  ",
   "main": "src/router.js",
   "repository": {
     "type": "git",
