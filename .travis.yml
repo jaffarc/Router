@@ -13,9 +13,7 @@ node_js:
   - "5"
 
 script:
-  - npm run eslint
-  - npm run jscs
-  - npm run test-cov
+  - npm test
 
 after_script:
   - npm install coveralls
