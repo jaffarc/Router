@@ -50,7 +50,7 @@ Router = (function (mod, window) {
      * @return {[type]}        [description]
      */
     Public.config = function(option) {
-        options.mode = option && option.mode == 'history' && !!(history.pushState) ? 'history' : 'hash';
+        options.mode = option && option.mode === 'history' && !!(history.pushState) ? 'history' : 'hash';
         options.root = option && option.root ? '/' + Private.clearSlashes(option.root) + '/' : '/';
 
         return options;
